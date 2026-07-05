@@ -7,3 +7,6 @@ word_features_top100_english.xlsx
 20191101-20241025-50/
 20101101-2014-50/
 data/
+
+# LibreOffice lock files
+.~lock.*#
