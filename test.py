@@ -1,21 +1,8 @@
-import pandas as pd
-import graph_tool.all as gt
-import time
+import pandas ad pd
 
-from itertools import combinations
-from collections import Counter
 
-from scipy.sparse import dok_matrix
+df1 = pd.read_csv('20010301-20241025_checkend.csv')
+df1.to_excel('', index=False)
 
-data_list = ['20010301-20070228.xlsx',
-             '20070301-20100930.xlsx',
-             '20101001-20140930.xlsx',
-             '20141001-20191031.xlsx',
-             '20191101-20241025.xlsx']
-
-df = pd.read_excel(data_list[4])
-
-keywords = df['본문']
-
-print(keywords[1])
-print(len(keywords[1]))
+df2 = pd.read_csv('불용어리스트.csv')
+df2.to_excel('불용어리스트', index=False)
